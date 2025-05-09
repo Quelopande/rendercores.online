@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css" rel="stylesheet">
+  <link rel="preload" href="/assets/img/logo.webp" as="image">
+</head>
+<body class="font-poppins bg-standard text-txt overflow-x-hidden">
+    <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0 26 75 / 60%)), url(https://wallpapercave.com/wp/wp8740299.jpg);height: 100vh;">
+        <nav class="p-5 flex justify-between items-center">
+            <div class="flex flex-row items-center">
+                <img src="/assets/img/logo.webp" alt="Logo azul y blanco" width="50px" loading="lazy" decoding="async">
+                <h1 class="ml-5 text-[25px] font-bold">EnderDeploy</h1>
+            </div>
+            <div class="flex flex-row items-center">
+                <ul class="flex flex-row">
+                    <li class="mx-5 hover:underline decoration-branding underline-offset-4 decoration-2"><a href="#home">Home</a></li>
+                    <li class="mx-5 hover:underline decoration-branding underline-offset-4 decoration-2"><a href="#about">About</a></li>
+                    <li class="mx-5 hover:underline decoration-branding underline-offset-4 decoration-2"><a href="#services">Services</a></li>
+                    <li class="mx-5 hover:underline decoration-branding underline-offset-4 decoration-2"><a href="#contact">Contact</a></li>
+                </ul>
+                <ul class="flex flex-row ml-5">
+                    <li onclick="window.location.href = 'https://newPage.html';" class="ml-2 border-2 border-branding py-2 px-10 bg-transparent transition-colors duration-300 hover:bg-branding hover:text-white cursor-pointer">Empezar</li>
+                </ul>
+            </div>
+        </nav>
+        <div class="flex justify-center mt-[20vh] flex-col">
+            <h1 class="text-center text-[40px] md:text-[60px] font-bold">Hosting de Alto Rendimiento para Gameservers</h1>
+            <p class="text-center mt-5 text-[20px] md:text-[25px]">Garantía de 99.9% Uptime - Latencia Ultra Baja</p>
+            <div class="flex justify-center">
+                <a class="border-2 mt-5 border-white py-2 px-10 bg-transparent transition-colors duration-300 hover:bg-white hover:text-black cursor-pointer">Comenzar ahora</a>
+            </div>
+        </div>
+    </div>
+    <div class="border-2 border-blue-600  z-1 absolute block w-full p-10 bg-standard rounded-5xl" style="margin-top: -100px;">
+        <h1 class="text-[25px] font-bold">¿Por qué elegirnos?</h1>
+        <p class="text-[20px]">Ofrecemos un servicio de hosting de alto rendimiento para tus juegos favoritos, con servidores ubicados en todo el mundo y una garantía de 99.9% de tiempo de actividad.</p>
+    </div>
+    <div class="-z-10 absolute w-[10vw] blur-[200px] h-[40vh] rounded-full bg-blue-800 pointer-events-none select-none right-[10vw]"></div>
+    <div class="-z-10 absolute w-[20vw] blur-[200px] h-[20vh] rounded-full bg-blue-700/20 pointer-events-none select-none left-[20vw] md:-left-20"></div>
+    <div class="-z-10 absolute w-[20vw] blur-[200px] h-[60vh] rounded-full bg-blue-500/80 pointer-events-none select-none left-[30vw] md:left-1/4 mt-[400px] md:mt-0"></div>
+    <div class="-z-10 absolute w-[30vw] blur-[200px] h-[20vh] rounded-full bg-blue-600/80 pointer-events-none select-none left-[20vw] md:left-2/4"></div>
+    <div class="mt-50 lg:mt-20 text-center">
+    <h2 class="lg:text-[40px] text-[30px] font-bold">Nuestros planes</h2>
+    <div class="flex-col lg:grid lg:grid-cols-[repeat(auto-fit,minmax(230px,407px))] gap-4 mt-10 justify-around" id="containers">
+        <div class="h-full p-10 rounded-5xl bg-primary bg-cover bg-center mx-[20px] my-[15px] lg:mx-0 lg:my-0" style="background-image: url('/assets/img/chicken.webp');">
+            <h2 class="text-[27px] font-bold">Chicken</h2>
+            <ul>
+                <li>2 GB RAM</li>
+                <li>1 núcleo de vCPU</li>
+            </ul>
+            <a class="w-full mt-[20px] inline-block px-6 py-2 rounded-4xl border-2 border-white text-white hover:bg-white hover:text-black transition-colors duration-300" href="https://billing.rendercores.online/products/minecraft/chicken-2gb">Comprar por 1,49$</a>
+        </div>
+        <div class="p-10 rounded-5xl bg-primary bg-cover bg-center mx-[20px] my-[15px] lg:mx-0 lg:my-0 hidden lg:block" style="background-image: url('/assets/img/cow.webp');">
+            <h2 class="text-[27px] font-bold">Cow</h2>
+            <ul>
+                <li>4 GB RAM</li>
+                <li>2 núcleo de vCPU</li>
+            </ul>
+            <a class="w-full mt-[20px] inline-block px-6 py-2 rounded-4xl border-2 border-white text-white hover:bg-white hover:text-black transition-colors duration-300" href="https://billing.rendercores.online/products/minecraft/cow-4gb">Comprar por 2,99$</a>
+        </div>
+        <div class="p-10 rounded-5xl bg-primary bg-cover bg-center mx-[20px] my-[15px] lg:mx-0 lg:my-0 hidden lg:block" style="background-image: url('/assets/img/pig.webp');">
+            <h2 class="text-[27px] font-bold">Pig</h2>
+            <ul>
+                <li>6 GB RAM</li>
+                <li>3 núcleo de vCPU</li>
+            </ul>
+            <a class="w-full mt-[20px] inline-block px-6 py-2 rounded-4xl border-2 border-white text-white hover:bg-white hover:text-black transition-colors duration-300" href="https://billing.rendercores.online/products/minecraft/pig-6gb">Comprar por 3,99$</a>
+        </div>
+        <div class="p-10 rounded-5xl bg-primary bg-cover bg-center mx-[20px] my-[15px] lg:mx-0 lg:my-0" style="background-image: url('/assets/img/dolphin.webp');">
+            <h2 class="text-[27px] font-bold">Dolphin</h2>
+            <ul>
+                <li>8 GB RAM</li>
+                <li>4 núcleo de vCPU</li>
+            </ul>
+            <a class="w-full mt-[20px] inline-block px-6 py-2 rounded-4xl border-2 border-white text-white hover:bg-white hover:text-black transition-colors duration-300" href="https://billing.rendercores.online/products/minecraft/dolphin-8gb">Comprar por 5,49$</a>
+        </div>
+        <div class="p-10 rounded-5xl bg-primary bg-cover bg-center mx-[20px] my-[15px] lg:mx-0 lg:my-0 hidden lg:block" style="background-image: url('/assets/img/wolf.webp');">
+            <h2 class="text-[27px] font-bold">Wolf</h2>
+            <ul>
+                <li>10 GB RAM</li>
+                <li>5 núcleo de vCPU</li>
+            </ul>
+            <a class="w-full mt-[20px] inline-block px-6 py-2 rounded-4xl border-2 border-white text-white hover:bg-white hover:text-black transition-colors duration-300" href="https://billing.rendercores.online/products/minecraft/wolf-10gb">Comprar por 6,99$</a>
+        </div>
+        <div class="p-10 rounded-5xl bg-primary bg-cover bg-center mx-[20px] my-[15px] lg:mx-0 lg:my-0 hidden lg:block" style="background-image: url('/assets/img/fox.webp');">
+            <h2 class="text-[27px] font-bold">Fox</h2>
+            <ul>
+                <li>12 GB RAM</li>
+                <li>6 núcleo de vCPU</li>
+            </ul>
+            <a class="w-full mt-[20px] inline-block px-6 py-2 rounded-4xl border-2 border-white text-white hover:bg-white hover:text-black transition-colors duration-300" href="https://billing.rendercores.online/products/minecraft/fox-12gb">Comprar por 7,99$</a>
+        </div>
+        <div class="p-10 rounded-5xl bg-primary bg-cover bg-center mx-[20px] my-[15px] lg:mx-0 lg:my-0 hidden lg:block" style="background-image: url('/assets/img/bee.webp');">
+            <h2 class="text-[27px] font-bold">Bee</h2>
+            <ul>
+                <li>14 GB RAM</li>
+                <li>7 núcleo de vCPU</li>
+            </ul>
+            <a class="w-full mt-[20px] inline-block px-6 py-2 rounded-4xl border-2 border-white text-white hover:bg-white hover:text-black transition-colors duration-300" href="https://billing.rendercores.online/products/minecraft/bee-14gb">Comprar por 9,49$</a>
+        </div>
+        <div class="p-10 rounded-5xl bg-primary bg-cover bg-center mx-[20px] my-[15px] lg:mx-0 lg:my-0" style="background-image: url('/assets/img/enderman.webp');">
+            <h2 class="text-[27px] font-bold">Enderman</h2>
+            <ul>
+                <li>16 GB RAM</li>
+                <li>8 núcleo de vCPU</li>
+            </ul>
+            <a class="w-full mt-[20px] inline-block px-6 py-2 rounded-4xl border-2 border-white text-white hover:bg-white hover:text-black transition-colors duration-300" href="https://billing.rendercores.online/products/minecraft/enderman-16gb">Comprar por 10,99$</a>
+        </div>
+    </div>
+    <div class="flex flex-col shadow-[inset_0_0_60px_0_#155dfc] border-2 border-blue-600 rounded-5xl mx-5 mt-10">
+        <h2 class="font-bold lg:text-[40px] text-[30px]">Nuestras Ubicaciones</h2>
+        <div class="flex flex-row">
+            <img src="/assets/img/map.webp" class="mt-10 w-full lg:w-[50vw]" loading="lazy" decoding="async">
+            <div class="align-left justify-left">
+                <h3 class="mt-5 lg:text-[25px] text-[20px]"><i class="fa-thin fa-earth-americas"></i> America del Norte</h3>
+                <p class="mt-5 -ml-27 lg:text-[20px] text-[15px]">Dallas, Usa</p>
+                <ul class="-ml-10 my-2">
+                    <li><i class="fa-thin fa-gauge"></i> Latencia: 30–120ms</li>
+                    <li><i class="fa-thin fa-server"></i> 2 Centros de Datos</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
