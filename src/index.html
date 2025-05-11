@@ -1,37 +1,63 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css" rel="stylesheet">
-  <link rel="preload" href="/assets/img/logo.webp" as="image">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RenderCores</title>
+    <meta name="description" content="Ofrecemos un servicio de hosting de alto rendimiento para tus juegos favoritos, con servidores ubicados en todo el mundo y una garantía de 99.9% de tiempo de actividad.">
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css" rel="stylesheet">
+    <link rel="preload" href="/assets/img/logo.webp" as="image">
+    <link rel="icon" type="image/x-icon" href="/assets/img/logo.ico">
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://rendercores.online">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RenderCores">
+    <meta property="og:description" content="Ofrecemos un servicio de hosting de alto rendimiento para tus juegos favoritos, con servidores ubicados en todo el mundo y una garantía de 99.9% de tiempo de actividad.">
+    <meta property="og:image" content="https://rendercores.online/assets/media/logo.webp">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="rendercores.online">
+    <meta property="twitter:url" content="https://rendercores.online">
+    <meta name="twitter:title" content="RenderCores">
+    <meta name="twitter:description" content="Ofrecemos un servicio de hosting de alto rendimiento para tus juegos favoritos, con servidores ubicados en todo el mundo y una garantía de 99.9% de tiempo de actividad.">
+    <meta property="twitter:image" content="https://rendercores.online/assets/media/logo.webp">
 </head>
 <body class="font-poppins bg-standard text-txt overflow-x-hidden">
-    <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0 26 75 / 60%)), url(https://wallpapercave.com/wp/wp8740299.jpg);height: 100vh;">
-        <nav class="p-5 flex justify-between items-center">
-            <div class="flex flex-row items-center">
-                <img src="/assets/img/logo.webp" alt="Logo azul y blanco" width="50px" loading="lazy" decoding="async">
-                <h1 class="ml-5 text-[25px] font-bold">EnderDeploy</h1>
+    <div class="bg-cover bg-center h-screen" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 26, 75, 0.6)), url('https://wallpapercave.com/wp/wp8740299.jpg')">
+        <nav class="p-5 flex flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0 z-10">
+                <img src="/assets/img/logo.webp" alt="Logo azul y blanco de RenderCores" class="w-12 h-12" loading="lazy" decoding="async">
+                <h1 class="ml-3 text-xl md:text-2xl font-bold">RenderCores</h1>
             </div>
-            <div class="flex flex-row items-center">
-                <ul class="flex flex-row">
-                    <li class="mx-5 hover:underline decoration-branding underline-offset-4 decoration-2"><a href="#home">Home</a></li>
-                    <li class="mx-5 hover:underline decoration-branding underline-offset-4 decoration-2"><a href="#about">About</a></li>
-                    <li class="mx-5 hover:underline decoration-branding underline-offset-4 decoration-2"><a href="#services">Services</a></li>
-                    <li class="mx-5 hover:underline decoration-branding underline-offset-4 decoration-2"><a href="#contact">Contact</a></li>
+            <div class="hidden md:flex items-center">
+                <ul class="flex space-x-6">
+                    <li class="hover:underline decoration-branding underline-offset-4"><a href="https://rendercores.online/">Inicio</a></li>
+                    <!-- <li class="hover:underline decoration-branding underline-offset-4"><a href="./about.html">Sobre Nosotros</a></li> -->
+                    <li class="hover:underline decoration-branding underline-offset-4"><a href="#plans">Planes</a></li>
+                    <li class="hover:underline decoration-branding underline-offset-4"><a href="https://discord.gg/Nq3XNkbKGJ">Contacto</a></li>
                 </ul>
-                <ul class="flex flex-row ml-5">
-                    <li onclick="window.location.href = 'https://newPage.html';" class="ml-2 border-2 border-branding py-2 px-10 bg-transparent transition-colors duration-300 hover:bg-branding hover:text-white cursor-pointer">Empezar</li>
-                </ul>
+                <button onclick="window.location.href='https://billing.rendercores.online/register'" class="ml-6 border-2 border-branding py-2 px-6 bg-transparent hover:bg-branding hover:text-white transition-colors">Empezar</button>
             </div>
+            <button class="md:hidden text-2xl z-10" id="menuBtn"><i class="fa-solid fa-bars" id="menuBtnIcon"></i></button>
         </nav>
-        <div class="flex justify-center mt-[20vh] flex-col">
-            <h1 class="text-center text-[40px] md:text-[60px] font-bold">Hosting de Alto Rendimiento para Gameservers</h1>
-            <p class="text-center mt-5 text-[20px] md:text-[25px]">Garantía de 99.9% Uptime - Latencia Ultra Baja</p>
-            <div class="flex justify-center">
-                <a class="border-2 mt-5 border-white py-2 px-10 bg-transparent transition-colors duration-300 hover:bg-white hover:text-black cursor-pointer">Comenzar ahora</a>
+        <div id="mobileMenu" class="absolute hidden md:hidden bg-[#0000003d] w-full py-4 px-5 top-0 z-0">
+            <ul class="space-y-4 text-center pt-15">
+                <li><a href="https://rendercores.online/" class="block py-2">Inicio</a></li>
+                <!-- <li><a href="./about.html" class="block py-2">Planes</a></li> -->
+                <li><a href="#plans" class="block py-2">Planes</a></li>
+                <li><a href="https://discord.gg/Nq3XNkbKGJ" class="block py-2">Contacto</a></li>
+                <li>
+                    <a href="https://billing.rendercores.online/register" class="block mt-4 py-2 border-2 border-branding rounded hover:bg-branding hover:text-white transition-colors">Empezar</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex flex-col justify-center h-[calc(100vh-150px)] px-4 md:px-0">
+            <h1 class="text-4xl md:text-6xl font-bold text-center px-2 md:px-0">Hosting de Alto Rendimiento para Gameservers</h1>
+            <p class="text-xl md:text-2xl text-center mt-4 md:mt-6">Garantía de 99.9% Uptime - Latencia Ultra Baja</p>
+            <div class="flex justify-center mt-8">
+                <a href="https://billing.rendercores.online/register" class="border-2 border-white py-3 px-8 md:px-12 bg-transparent hover:bg-white hover:text-black transition-colors text-lg cursor-pointer">Comenzar ahora</a>
             </div>
         </div>
     </div>
@@ -43,7 +69,7 @@
     <div class="-z-10 absolute w-[20vw] blur-[200px] h-[20vh] rounded-full bg-blue-700/20 pointer-events-none select-none left-[20vw] md:-left-20"></div>
     <div class="-z-10 absolute w-[20vw] blur-[200px] h-[60vh] rounded-full bg-blue-500/80 pointer-events-none select-none left-[30vw] md:left-1/4 mt-[400px] md:mt-0"></div>
     <div class="-z-10 absolute w-[30vw] blur-[200px] h-[20vh] rounded-full bg-blue-600/80 pointer-events-none select-none left-[20vw] md:left-2/4"></div>
-    <div class="mt-50 lg:mt-20 text-center">
+    <div class="mt-50 lg:mt-20 text-center" id="plans">
     <h2 class="lg:text-[40px] text-[30px] font-bold">Nuestros planes</h2>
     <div class="flex-col lg:grid lg:grid-cols-[repeat(auto-fit,minmax(230px,407px))] gap-4 mt-10 justify-around" id="containers">
         <div class="h-full p-10 rounded-5xl bg-primary bg-cover bg-center mx-[20px] my-[15px] lg:mx-0 lg:my-0" style="background-image: url('/assets/img/chicken.webp');">
@@ -111,13 +137,13 @@
             <a class="w-full mt-[20px] inline-block px-6 py-2 rounded-4xl border-2 border-white text-white hover:bg-white hover:text-black transition-colors duration-300" href="https://billing.rendercores.online/products/minecraft/enderman-16gb">Comprar por 10,99$</a>
         </div>
     </div>
-    <div class="flex flex-col shadow-[inset_0_0_60px_0_#155dfc] border-2 border-blue-600 rounded-5xl mx-5 mt-10">
+    <div class="flex flex-col shadow-[inset_0_0_60px_0_#155dfc] border-2 border-blue-600 rounded-5xl mx-5 mt-10" id="locations">
         <h2 class="font-bold lg:text-[40px] text-[30px]">Nuestras Ubicaciones</h2>
-        <div class="flex flex-row">
+        <div class="flex flex-col lg:flex-row">
             <img src="/assets/img/map.webp" class="mt-10 w-full lg:w-[50vw]" loading="lazy" decoding="async">
             <div class="align-left justify-left">
-                <h3 class="mt-5 lg:text-[25px] text-[20px]"><i class="fa-thin fa-earth-americas"></i> America del Norte</h3>
-                <p class="mt-5 -ml-27 lg:text-[20px] text-[15px]">Dallas, Usa</p>
+                <h3 class="mt-5 text-[25px]"><i class="fa-thin fa-earth-americas"></i> America del Norte</h3>
+                <p class="mt-5 -ml-27 text-[20px]">Dallas, Usa</p>
                 <ul class="-ml-10 my-2">
                     <li><i class="fa-thin fa-gauge"></i> Latencia: 30–120ms</li>
                     <li><i class="fa-thin fa-server"></i> 2 Centros de Datos</li>
@@ -125,6 +151,185 @@
             </div>
         </div>
     </div>
-</div>
+    <div class="flex flex-col mt-10 mx-5">
+        <h2 class="lg:text-[40px] text-[30px] font-bold text-center">Características Destacadas</h2>
+        <div class="lg:grid lg:grid-cols-3 gap-8 mt-10">
+            <div class="p-6 rounded-5xl border border-gray-700 mb-5 lg:mb-0">
+                <i class="fa-solid fa-shield mr-2 bg-blue-600 p-3 rounded-full text-[25px]"></i>
+                <h3 class="text-[25px] font-bold">Seguridad Máxima</h3>
+                <p class="mt-3 text-gray-300">Protección DDoS avanzada</p>
+            </div>
+            <div class="p-6 rounded-5xl border border-gray-700 mb-5 lg:mb-0">
+                <i class="fa-solid fa-comments mr-2 bg-blue-600 p-3 rounded-full text-[25px]"></i>
+                <h3 class="text-[25px] font-bold">Soporte en tu idioma</h3>
+                <p class="mt-3 text-gray-300">Te atendemos en tu idioma preferido</p>
+                <p class="text-gray-400 italic">Support in your language</p>
+            </div>
+            <div class="p-6 rounded-5xl border border-gray-700 mb-5 lg:mb-0">
+                <i class="fa-solid fa-sliders mr-2 bg-blue-600 p-3 rounded-full text-[25px]"></i>
+                <h3 class="text-[25px] font-bold">Control Integral</h3>
+                <p class="mt-3 text-gray-300">Administra servidores, mods y jugadores desde un panel intuitivo</p>
+                <p class="text-gray-400 italic">Copias automáticas con retención de 7 días</p>
+            </div>
+            <div class="p-6 rounded-5xl border border-gray-700 mb-5 lg:mb-0">
+                <i class="fa-solid fa-rabbit-running mr-2 bg-blue-600 p-3 rounded-full text-[25px]"></i>
+                <h3 class="text-[25px] font-bold">Velocidad Máxima</h3>
+                <p class="mt-3 text-gray-300">Procesadores desde 3.4 GHz con almacenamiento NVMe</p>
+            </div>
+            <div class="p-6 rounded-5xl border border-gray-700 mb-5 lg:mb-0">
+                <i class="fa-solid fa-cloud mr-2 bg-blue-600 p-3 rounded-full text-[25px]"></i>
+                <h3 class="text-[25px] font-bold">Backup Automático</h3>
+                <p class="mt-3 text-gray-300">Copias de seguridad diarias garantizadas</p>
+            </div>
+            <div class="p-6 rounded-5xl border border-gray-700 mb-5 lg:mb-0">
+                <i class="fa-thin fa-server mr-2 bg-blue-600 p-3 rounded-full text-[25px]"></i>
+                <h3 class="text-[25px] font-bold">Hardware Dedicado</h3>
+                <p class="mt-3 text-gray-300">Recursos exclusivos para tu servidor</p>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col mx-5 mt-10">
+        <h2 class="lg:text-[40px] text-[30px] font-bold text-center">Conoce nuestro panel</h2>
+        <div class="border border-gray-700 rounded-5xl mt-5 p-2">
+            <div class="lg:grid lg:grid-cols-4 gap-3">
+                <div onclick="changeImg('/assets/img/panel1.png', 'Imagen que muestra el panel de gestión del servidor.')" class="p-6 rounded-5xl border border-branding mb-2 lg:mb-0 hover:bg-branding/20 trnasition-all duration-300 cursor-pointer">
+                    <h3 class="text-[22px] font-semibold"><i class="fa-solid fa-square-terminal"></i> Gestor del Servidor</h3>
+                </div>
+                <div onclick="changeImg('/assets/img/panel2.png', 'Imagen que muestra el panel de gestión del jugadores.')" class="p-6 rounded-5xl border border-branding mb-2 lg:mb-0 hover:bg-branding/20 trnasition-all duration-300 cursor-pointer">
+                    <h3 class="text-[22px] font-semibold"><i class="fa-solid fa-person"></i> Gestor de Jugadores</h3>
+                </div>
+                <div onclick="changeImg('/assets/img/panel3.png', 'Imagen que muestra el panel de gestión del mods.')" class="p-6 rounded-5xl border border-branding mb-2 lg:mb-0 hover:bg-branding/20 trnasition-all duration-300 cursor-pointer">
+                    <h3 class="text-[22px] font-semibold"><i class="fa-regular fa-wrench"></i> Gestor de mods</h3>
+                </div>
+                <div onclick="changeImg('/assets/img/panel4.png', 'Imagen que muestra el panel de gestión del plugins.')" class="p-6 rounded-5xl border border-branding mb-2 lg:mb-0 hover:bg-branding/20 trnasition-all duration-300 cursor-pointer">
+                    <h3 class="text-[22px] font-semibold"><i class="fa-solid fa-plug"></i> Gestor de Plugins</h3>
+                </div>
+            </div>
+            <img src="/assets/img/panel1.png" id="panelDisplayImg" alt="Imagen que muestra el panel de gestión del servidor."class="mt-5 lg:mx-[24%] mx-0 w-full lg:w-[48%] rounded-5xl border-1 border-branding" loading="lazy" decoding="async">
+        </div>
+    </div>
+    <div class="max-w-4xl mx-auto px-4 py-12">
+        <h1 class="text-4xl font-bold text-center mb-12">Preguntas Frecuentes</h1>
+        <div class="space-y-4" id="faq-container">
+            <div class="border border-branding rounded-5xl overflow-hidden transition-all duration-300">
+                <button class="faq-btn w-full px-6 py-4 text-left flex justify-between items-center bg-branding/20 hover:bg-branding/40 transition-colors cursor-pointer">
+                    <h3 class="text-xl font-medium">¿Qué métodos de pago aceptan?</h3>
+                    <i class="fa-solid fa-play transform transition-transform duration-200 text-sm text-blue-400"></i>
+                </button>
+                <div class="faq-content px-6 pb-4 hidden bg-gray-800/50">
+                    <p class="text-gray-300 pt-4">Aceptamos todas las tarjetas Visa / Mastercard, PayPal, Mercado Pago, OXXO, Google Pay, Apple Pay, etc. Contáctanos para mayor información.</p>
+                </div>
+            </div>
+            <div class="border border-branding rounded-5xl overflow-hidden transition-all duration-300">
+                <button class="faq-btn w-full px-6 py-4 text-left flex justify-between items-center bg-branding/20 hover:bg-branding/40 transition-colors cursor-pointer">
+                    <h3 class="text-xl font-medium">¿Qué plan debería adquirir?</h3>
+                    <i class="fa-solid fa-play transform transition-transform duration-200 text-sm text-blue-400"></i>
+                </button>
+                <div class="faq-content px-6 pb-4 hidden bg-gray-800/50">
+                    <p class="text-gray-300 pt-4">El plan que mejor se adapta a cada persona cambia según sus necesidades. Tenemos una excelente <a class="text-blue-400 font-bold hover:underline" href="http://" target="_blank" rel="noopener noreferrer">guía al respecto aquí</a>.</p>
+                </div>
+            </div>
+            <div class="border border-branding rounded-5xl overflow-hidden transition-all duration-300">
+                <button class="faq-btn w-full px-6 py-4 text-left flex justify-between items-center bg-branding/20 hover:bg-branding/40 transition-colors cursor-pointer">
+                    <h3 class="text-xl font-medium">¿Cuántos jugadores pueden unirse?</h3>
+                    <i class="fa-solid fa-play transform transition-transform duration-200 text-sm text-blue-400"></i>
+                </button>
+                <div class="faq-content px-6 pb-4 hidden bg-gray-800/50">
+                    <p class="text-gray-300 pt-4">NO LIMITAMOS la cantidad de jugadores que pueden unirse a tu servidor. Puedes configurar este número para que sea ilimitado!</p>
+                </div>
+            </div>
+            <div class="border border-branding rounded-5xl overflow-hidden transition-all duration-300">
+                <button class="faq-btn w-full px-6 py-4 text-left flex justify-between items-center bg-branding/20 hover:bg-branding/40 transition-colors cursor-pointer">
+                    <h3 class="text-xl font-medium">¿Existe un límite de plugins?</h3>
+                    <i class="fa-solid fa-play transform transition-transform duration-200 text-sm text-blue-400"></i>
+                </button>
+                <div class="faq-content px-6 pb-4 hidden bg-gray-800/50">
+                    <p class="text-gray-300 pt-4">No limitamos la cantidad de plugins que puede ejecutar tu servidor. ¡Divíértete!</p>
+                </div>
+            </div>
+            <div class="border border-branding rounded-5xl overflow-hidden transition-all duration-300">
+                <button class="faq-btn w-full px-6 py-4 text-left flex justify-between items-center bg-branding/20 hover:bg-branding/40 transition-colors cursor-pointer">
+                    <h3 class="text-xl font-medium">¿Cuándo se procesa mi pedido?</h3>
+                    <i class="fa-solid fa-play transform transition-transform duration-200 text-sm text-blue-400"></i>
+                </button>
+                <div class="faq-content px-6 pb-4 hidden bg-gray-800/50">
+                    <p class="text-gray-300 pt-4">Los pedidos se procesan al instante una vez recibido el pago. Normalmente, el proceso demora entre 5-10 minutos. Si tarda más, te sugerimos que abras un chat en vivo o ticket en nuestro <a class="text-blue-400 font-bold hover:underline" href="https://discord.gg/Nq3XNkbKGJ" target="_blank" rel="noopener noreferrer">Discord</a>.</p>
+                </div>
+            </div>
+            <div class="border border-branding rounded-5xl overflow-hidden transition-all duration-300">
+                <button class="faq-btn w-full px-6 py-4 text-left flex justify-between items-center bg-gray-800 hover:bg-branding/40 transition-colors cursor-pointer">
+                    <h3 class="text-xl font-medium">¿Cómo puedo obtener un dominio personalizado?</h3>
+                    <i class="fa-solid fa-play transform transition-transform duration-200 text-sm text-blue-400"></i>
+                </button>
+                <div class="faq-content px-6 pb-4 hidden bg-gray-800/50">
+                    <p class="text-gray-300 pt-4">Ofrecemos una selección de múltiples dominios que puedes usar para tu servidor GRATIS. Estos dominios incluyen rendercores.online y otros. Si deseas un dominio de pago (totalmente personalizado), podemos ayudarte con la configuración!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col mt-10 mx-5 bg-primary rounded-5xl p-10">
+        <div class="flex flex-col lg:flex-row justify-between items-center">
+            <div>
+                <h2 class="text-4xl">RenderCores</h2>
+                <h3 class="text-[19px] text-gray-300">Tu servidor, nuestro compromiso</h3>
+                <p class="text-gray-300">Tu solución profesional para hosting de juegos</p>
+                <div class="mt-5">
+                    <a href="https://discord.gg/Nq3XNkbKGJ" class="p-2 rounded-full border text-white hover:bg-white hover:text-black duration-300"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://x.com/RenderCores" class="p-2 rounded-full border text-white hover:bg-white hover:text-black duration-300"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://facebook.com/profile.php?id=61559791887146" class="p-2 rounded-full border text-white hover:bg-white hover:text-black duration-300"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/enderhostingmx" class="p-2 rounded-full border text-white hover:bg-white hover:text-black duration-300"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@rendercores" class="p-2 rounded-full border text-white hover:bg-white hover:text-black duration-300"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="flex flex-col text-center mt-10 lg:mt-0 lg:text-left ml-0 lg:ml-[60px]">
+                <h3 class="font-bold text-xl">Enlaces</h3>
+                <a href="https://rendercores.online/" class="text-gray-300 hover:underline">Documentación</a>
+                <a href="https://rendercores.online#locations" class="text-gray-300 hover:underline">Ubicaciones</a>
+                <a href="https://rendercores.online#plans" class="text-gray-300 hover:underline">Planes</a>
+                <a href="https://discord.gg/Nq3XNkbKGJ" class="text-gray-300 hover:underline">Discord</a>
+            </div>
+            <div class="flex flex-col text-center mt-10 lg:mt-0 lg:text-left ml-0 lg:ml-[60px]">
+                <h3 class="font-bold text-xl">Contacto</h3>
+                <a href="mailto:hola@rendercores.online" class="text-gray-300 hover:underline">hola@rendercores.online</a>
+                <a href="tel:+523113935413" class="text-gray-300 hover:underline">+52 311-393-5413</a>
+            </div>
+        </div>
+        <hr class="lg:block border-gray-300 w-full my-5 ">
+        <p>© 2025 RenderCores. Todos los derechos reservados. <a href="https://rendercores.online/terms.html" class="text-blue-300 hover:underline">Términos de servicio</a> <a href="https://rendercores.online/privacy.html" class="text-blue-300 hover:underline">Política de privacidad</a></p>
+    </div>
+<script>
+    const menuBtn = document.getElementById('menuBtn');
+        const menuBtnIcon = document.getElementById('menuBtnIcon');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        menuBtnIcon.classList.toggle('fa-xmark');
+        menuBtnIcon.classList.toggle('fa-bars');
+    });
+</script>
+<script>
+document.querySelectorAll('.faq-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector('i');
+        content.classList.toggle('hidden');
+        icon.classList.toggle('rotate-90');
+        document.querySelectorAll('.faq-content').forEach(item => {
+            if (item !== content && !item.classList.contains('hidden')) {
+                item.classList.add('hidden');
+                item.previousElementSibling.querySelector('i').classList.remove('rotate-90');
+            }
+        });
+    });
+});
+</script>
+    <script>
+        function changeImg(imgNewSrc, imgNewAlt) {
+            let panelDisplayImg = document.getElementById('panelDisplayImg');
+            panelDisplayImg.src = imgNewSrc;
+            panelDisplayImg.alt = imgNewAlt;
+        }
+    </script>
 </body>
 </html>
