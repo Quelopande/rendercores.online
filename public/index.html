@@ -26,30 +26,34 @@
 </head>
 <body class="font-poppins bg-standard text-txt overflow-x-hidden">
     <div class="bg-cover bg-center h-screen" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 26, 75, 0.6)), url('https://wallpapercave.com/wp/wp8740299.jpg')">
-        <nav class="p-5 flex flex-row justify-between items-center">
-            <div class="flex items-center mb-4 md:mb-0 z-10">
-                <img src="/assets/img/logo.webp" alt="Logo azul y blanco de RenderCores" class="w-12 h-12" loading="lazy" decoding="async">
-                <h1 class="ml-3 text-xl md:text-2xl font-bold">RenderCores</h1>
+        <nav class="pt-5 px-5 lg:p-5 flex flex-row left-0 right-0 justify-between z-20">
+            <div class="flex items-center mb-4 lg:mb-0 z-10">
+                <img src="./assets/img/logo.webp" alt="Logo azul y blanco de RenderCores" class="w-12 h-12" loading="lazy" decoding="async">
+                <h1 class="ml-3 text-xl lg:text-2xl font-bold">RenderCores</h1>
             </div>
-            <div class="hidden md:flex items-center">
+            <div class="hidden lg:flex items-center">
                 <ul class="flex space-x-6">
-                    <li class="hover:underline decoration-branding underline-offset-4"><a href="https://rendercores.online/">Inicio</a></li>
-                    <!-- <li class="hover:underline decoration-branding underline-offset-4"><a href="./about.html">Sobre Nosotros</a></li> -->
-                    <li class="hover:underline decoration-branding underline-offset-4"><a href="#plans">Planes</a></li>
-                    <li class="hover:underline decoration-branding underline-offset-4"><a href="https://discord.gg/Nq3XNkbKGJ">Contacto</a></li>
+                    <li class="hover:underline decoration-branding decoration-2 underline-offset-4"><a href="https://rendercores.online/">Inicio</a></li>
+                    <li class="hover:underline decoration-branding decoration-2 underline-offset-4"><a href="./partnership">PartnerShip</a></li>
+                    <li class="hover:underline decoration-branding decoration-2 underline-offset-4"><a href="./affiliate">Affiliate</a></li>
+                    <!-- <li class="hover:underline decoration-branding decoration-2 underline-offset-4"><a href="./about.html">Sobre Nosotros</a></li> -->
+                    <li class="hover:underline decoration-branding decoration-2 underline-offset-4"><a href="#plans">Planes</a></li>
+                    <li class="hover:underline decoration-branding decoration-2 underline-offset-4"><a href="https://discord.com/invite/QKVE898psb">Contacto</a></li>
                 </ul>
                 <button onclick="window.location.href='https://billing.rendercores.online/register'" class="ml-6 border-2 border-branding py-2 px-6 bg-transparent hover:bg-branding hover:text-white transition-colors">Empezar</button>
             </div>
-            <button class="md:hidden text-2xl z-10" id="menuBtn"><i class="fa-solid fa-bars" id="menuBtnIcon"></i></button>
+            <button class="lg:hidden text-2xl z-10 -mt-3" id="menuBtn"><i class="fa-solid fa-bars" id="menuBtnIcon"></i></button>
         </nav>
-        <div id="mobileMenu" class="absolute hidden md:hidden bg-[#0000003d] w-full py-4 px-5 top-0 z-0">
+        <div id="mobileMenu" class="hidden fixed lg:hidden bg-standard w-full py-4 px-5 top-0 z-5">
             <ul class="space-y-4 text-center pt-15">
-                <li><a href="https://rendercores.online/" class="block py-2">Inicio</a></li>
+                <li><a href="/" class="block py-2">Inicio</a></li>
+                <li><a href="./partnership" class="block py-2">PartnerShip</a></li>
+                <li><a href="./affiliate" class="block py-2">Affiliate</a></li>
                 <!-- <li><a href="./about.html" class="block py-2">Planes</a></li> -->
                 <li><a href="#plans" class="block py-2">Planes</a></li>
-                <li><a href="https://discord.gg/Nq3XNkbKGJ" class="block py-2">Contacto</a></li>
+                <li><a href="https://discord.com/invite/QKVE898psb" class="block py-2">Contacto</a></li>
                 <li>
-                    <a href="https://billing.rendercores.online/register" class="block mt-4 py-2 border-2 border-branding rounded hover:bg-branding hover:text-white transition-colors">Empezar</a>
+                    <a href="https://billing.rendercores.online/register" class="block mt-4 py-2 border-2 border-branding hover:bg-branding hover:text-white transition-colors">Empezar</a>
                 </li>
             </ul>
         </div>
@@ -69,78 +73,82 @@
     <div class="-z-10 absolute w-[20vw] blur-[200px] h-[20vh] rounded-full bg-blue-700/20 pointer-events-none select-none left-[20vw] md:-left-20"></div>
     <div class="-z-10 absolute w-[20vw] blur-[200px] h-[60vh] rounded-full bg-blue-500/80 pointer-events-none select-none left-[30vw] md:left-1/4 mt-[400px] md:mt-0"></div>
     <div class="-z-10 absolute w-[30vw] blur-[200px] h-[20vh] rounded-full bg-blue-600/80 pointer-events-none select-none left-[20vw] md:left-2/4"></div>
-    <div class="mt-50 lg:mt-20 text-center" id="plans">
+    <div class="mt-70 sm:mt-50 lg:mt-20 text-center" id="plans">
     <h2 class="lg:text-[40px] text-[30px] font-bold">Nuestros planes</h2>
+    <div class="bg-standard rounded-full flex justify-center items-center w-[354px] h-[50px] mx-auto mt-5">
+        <p onclick="priceChanger('monthly')" id="monthly" class="mr-3 px-10 py-2 bg-primary rounded-full hover:bg-[#272829] hover:cursor-pointer transition-all duration-300 border-1 border-[#272829]">Mensual</p>
+        <p onclick="priceChanger('annually')" id="annually" class="ml-3 px-10 py-2 bg-primary rounded-full hover:bg-[#272829] hover:cursor-pointer transition-all duration-300 border-1 border-[#272829]">Anual <span class="text-red-400"> -15%</span></p>
+    </div>
     <div class="flex-col lg:grid lg:grid-cols-[repeat(auto-fit,minmax(230px,407px))] gap-4 mt-10 justify-around" id="containers">
-        <div class="h-full p-10 rounded-5xl bg-primary bg-cover bg-center mx-[20px] my-[15px] lg:mx-0 lg:my-0" style="background-image: url('/assets/img/chicken.webp');">
+        <div class="h-full p-10 rounded-5xl bg-primary bg-cover bg-center mx-[20px] my-[15px] lg:mx-0 lg:my-0" style="background-image: url('./assets/img/chicken.webp');">
             <h2 class="text-[27px] font-bold">Chicken</h2>
             <ul>
                 <li>2 GB RAM</li>
                 <li>1 núcleo de vCPU</li>
             </ul>
-            <a class="w-full mt-[20px] inline-block px-6 py-2 rounded-4xl border-2 border-white text-white hover:bg-white hover:text-black transition-colors duration-300" href="https://billing.rendercores.online/products/minecraft/chicken-2gb">Comprar por 1,49$</a>
+            <a class="w-full mt-[20px] inline-block px-6 py-2 rounded-4xl border-2 border-white text-white hover:bg-white hover:text-black transition-colors duration-300" href="https://billing.rendercores.online/products/minecraft/chicken-2gb">Comprar por <span class="priceToChange" data-normal-price="1.49">1,49$ /mes</span></a>
         </div>
-        <div class="p-10 rounded-5xl bg-primary bg-cover bg-center mx-[20px] my-[15px] lg:mx-0 lg:my-0 hidden lg:block" style="background-image: url('/assets/img/cow.webp');">
+        <div class="p-10 rounded-5xl bg-primary bg-cover bg-center mx-[20px] my-[15px] lg:mx-0 lg:my-0 hidden lg:block" style="background-image: url('./assets/img/cow.webp');">
             <h2 class="text-[27px] font-bold">Cow</h2>
             <ul>
                 <li>4 GB RAM</li>
                 <li>2 núcleo de vCPU</li>
             </ul>
-            <a class="w-full mt-[20px] inline-block px-6 py-2 rounded-4xl border-2 border-white text-white hover:bg-white hover:text-black transition-colors duration-300" href="https://billing.rendercores.online/products/minecraft/cow-4gb">Comprar por 2,99$</a>
+            <a class="w-full mt-[20px] inline-block px-6 py-2 rounded-4xl border-2 border-white text-white hover:bg-white hover:text-black transition-colors duration-300" href="https://billing.rendercores.online/products/minecraft/cow-4gb">Comprar por <span class="priceToChange" data-normal-price="2.99">2,99$ /mes</span></a>
         </div>
-        <div class="p-10 rounded-5xl bg-primary bg-cover bg-center mx-[20px] my-[15px] lg:mx-0 lg:my-0 hidden lg:block" style="background-image: url('/assets/img/pig.webp');">
+        <div class="p-10 rounded-5xl bg-primary bg-cover bg-center mx-[20px] my-[15px] lg:mx-0 lg:my-0 hidden lg:block" style="background-image: url('./assets/img/pig.webp');">
             <h2 class="text-[27px] font-bold">Pig</h2>
             <ul>
                 <li>6 GB RAM</li>
                 <li>3 núcleo de vCPU</li>
             </ul>
-            <a class="w-full mt-[20px] inline-block px-6 py-2 rounded-4xl border-2 border-white text-white hover:bg-white hover:text-black transition-colors duration-300" href="https://billing.rendercores.online/products/minecraft/pig-6gb">Comprar por 3,99$</a>
+            <a class="w-full mt-[20px] inline-block px-6 py-2 rounded-4xl border-2 border-white text-white hover:bg-white hover:text-black transition-colors duration-300" href="https://billing.rendercores.online/products/minecraft/pig-6gb">Comprar por <span class="priceToChange" data-normal-price="3.99">3,99$ /mes</span></a>
         </div>
-        <div class="p-10 rounded-5xl bg-primary bg-cover bg-center mx-[20px] my-[15px] lg:mx-0 lg:my-0" style="background-image: url('/assets/img/dolphin.webp');">
+        <div class="p-10 rounded-5xl bg-primary bg-cover bg-center mx-[20px] my-[15px] lg:mx-0 lg:my-0" style="background-image: url('./assets/img/dolphin.webp');">
             <h2 class="text-[27px] font-bold">Dolphin</h2>
             <ul>
                 <li>8 GB RAM</li>
                 <li>4 núcleo de vCPU</li>
             </ul>
-            <a class="w-full mt-[20px] inline-block px-6 py-2 rounded-4xl border-2 border-white text-white hover:bg-white hover:text-black transition-colors duration-300" href="https://billing.rendercores.online/products/minecraft/dolphin-8gb">Comprar por 5,49$</a>
+            <a class="w-full mt-[20px] inline-block px-6 py-2 rounded-4xl border-2 border-white text-white hover:bg-white hover:text-black transition-colors duration-300" href="https://billing.rendercores.online/products/minecraft/dolphin-8gb">Comprar por <span class="priceToChange" data-normal-price="5.49">5,49$ /mes</span></a>
         </div>
-        <div class="p-10 rounded-5xl bg-primary bg-cover bg-center mx-[20px] my-[15px] lg:mx-0 lg:my-0 hidden lg:block" style="background-image: url('/assets/img/wolf.webp');">
+        <div class="p-10 rounded-5xl bg-primary bg-cover bg-center mx-[20px] my-[15px] lg:mx-0 lg:my-0 hidden lg:block" style="background-image: url('./assets/img/wolf.webp');">
             <h2 class="text-[27px] font-bold">Wolf</h2>
             <ul>
                 <li>10 GB RAM</li>
                 <li>5 núcleo de vCPU</li>
             </ul>
-            <a class="w-full mt-[20px] inline-block px-6 py-2 rounded-4xl border-2 border-white text-white hover:bg-white hover:text-black transition-colors duration-300" href="https://billing.rendercores.online/products/minecraft/wolf-10gb">Comprar por 6,99$</a>
+            <a class="w-full mt-[20px] inline-block px-6 py-2 rounded-4xl border-2 border-white text-white hover:bg-white hover:text-black transition-colors duration-300" href="https://billing.rendercores.online/products/minecraft/wolf-10gb">Comprar por <span class="priceToChange" data-normal-price="6.99">6,99$ /mes</span></a>
         </div>
-        <div class="p-10 rounded-5xl bg-primary bg-cover bg-center mx-[20px] my-[15px] lg:mx-0 lg:my-0 hidden lg:block" style="background-image: url('/assets/img/fox.webp');">
+        <div class="p-10 rounded-5xl bg-primary bg-cover bg-center mx-[20px] my-[15px] lg:mx-0 lg:my-0 hidden lg:block" style="background-image: url('./assets/img/fox.webp');">
             <h2 class="text-[27px] font-bold">Fox</h2>
             <ul>
                 <li>12 GB RAM</li>
                 <li>6 núcleo de vCPU</li>
             </ul>
-            <a class="w-full mt-[20px] inline-block px-6 py-2 rounded-4xl border-2 border-white text-white hover:bg-white hover:text-black transition-colors duration-300" href="https://billing.rendercores.online/products/minecraft/fox-12gb">Comprar por 7,99$</a>
+            <a class="w-full mt-[20px] inline-block px-6 py-2 rounded-4xl border-2 border-white text-white hover:bg-white hover:text-black transition-colors duration-300" href="https://billing.rendercores.online/products/minecraft/fox-12gb">Comprar por <span class="priceToChange" data-normal-price="7.99">7,99$ /mes</span></a>
         </div>
-        <div class="p-10 rounded-5xl bg-primary bg-cover bg-center mx-[20px] my-[15px] lg:mx-0 lg:my-0 hidden lg:block" style="background-image: url('/assets/img/bee.webp');">
+        <div class="p-10 rounded-5xl bg-primary bg-cover bg-center mx-[20px] my-[15px] lg:mx-0 lg:my-0 hidden lg:block" style="background-image: url('./assets/img/bee.webp');">
             <h2 class="text-[27px] font-bold">Bee</h2>
             <ul>
                 <li>14 GB RAM</li>
                 <li>7 núcleo de vCPU</li>
             </ul>
-            <a class="w-full mt-[20px] inline-block px-6 py-2 rounded-4xl border-2 border-white text-white hover:bg-white hover:text-black transition-colors duration-300" href="https://billing.rendercores.online/products/minecraft/bee-14gb">Comprar por 9,49$</a>
+            <a class="w-full mt-[20px] inline-block px-6 py-2 rounded-4xl border-2 border-white text-white hover:bg-white hover:text-black transition-colors duration-300" href="https://billing.rendercores.online/products/minecraft/bee-14gb">Comprar por <span class="priceToChange" data-normal-price="9.49">9,49$ /mes</span></a>
         </div>
-        <div class="p-10 rounded-5xl bg-primary bg-cover bg-center mx-[20px] my-[15px] lg:mx-0 lg:my-0" style="background-image: url('/assets/img/enderman.webp');">
+        <div class="p-10 rounded-5xl bg-primary bg-cover bg-center mx-[20px] my-[15px] lg:mx-0 lg:my-0" style="background-image: url('./assets/img/enderman.webp');">
             <h2 class="text-[27px] font-bold">Enderman</h2>
             <ul>
                 <li>16 GB RAM</li>
                 <li>8 núcleo de vCPU</li>
             </ul>
-            <a class="w-full mt-[20px] inline-block px-6 py-2 rounded-4xl border-2 border-white text-white hover:bg-white hover:text-black transition-colors duration-300" href="https://billing.rendercores.online/products/minecraft/enderman-16gb">Comprar por 10,99$</a>
+            <a class="w-full mt-[20px] inline-block px-6 py-2 rounded-4xl border-2 border-white text-white hover:bg-white hover:text-black transition-colors duration-300" href="https://billing.rendercores.online/products/minecraft/enderman-16gb">Comprar por <span class="priceToChange" data-normal-price="10.99">10,99$ /mes</span></a>
         </div>
     </div>
     <div class="flex flex-col shadow-[inset_0_0_60px_0_#155dfc] border-2 border-blue-600 rounded-5xl mx-5 mt-10" id="locations">
         <h2 class="font-bold lg:text-[40px] text-[30px]">Nuestras Ubicaciones</h2>
         <div class="flex flex-col lg:flex-row">
-            <img src="/assets/img/map.webp" class="mt-10 w-full lg:w-[50vw]" loading="lazy" decoding="async">
+            <img src="./assets/img/map.webp" class="mt-10 w-full lg:w-[50vw]" loading="lazy" decoding="async">
             <div class="align-left justify-left">
                 <h3 class="mt-5 text-[25px]"><i class="fa-thin fa-earth-americas"></i> America del Norte</h3>
                 <p class="mt-5 -ml-27 text-[20px]">Dallas, Usa</p>
@@ -192,20 +200,20 @@
         <h2 class="lg:text-[40px] text-[30px] font-bold text-center">Conoce nuestro panel</h2>
         <div class="border border-gray-700 rounded-5xl mt-5 p-2">
             <div class="lg:grid lg:grid-cols-4 gap-3">
-                <div onclick="changeImg('/assets/img/panel1.png', 'Imagen que muestra el panel de gestión del servidor.')" class="p-6 rounded-5xl border border-branding mb-2 lg:mb-0 hover:bg-branding/20 trnasition-all duration-300 cursor-pointer">
+                <div onclick="changeImg('./assets/img/panel1.png', 'Imagen que muestra el panel de gestión del servidor.')" class="p-6 rounded-5xl border border-branding mb-2 lg:mb-0 hover:bg-branding/20 trnasition-all duration-300 cursor-pointer">
                     <h3 class="text-[22px] font-semibold"><i class="fa-solid fa-square-terminal"></i> Gestor del Servidor</h3>
                 </div>
-                <div onclick="changeImg('/assets/img/panel2.png', 'Imagen que muestra el panel de gestión del jugadores.')" class="p-6 rounded-5xl border border-branding mb-2 lg:mb-0 hover:bg-branding/20 trnasition-all duration-300 cursor-pointer">
+                <div onclick="changeImg('./assets/img/panel2.png', 'Imagen que muestra el panel de gestión del jugadores.')" class="p-6 rounded-5xl border border-branding mb-2 lg:mb-0 hover:bg-branding/20 trnasition-all duration-300 cursor-pointer">
                     <h3 class="text-[22px] font-semibold"><i class="fa-solid fa-person"></i> Gestor de Jugadores</h3>
                 </div>
-                <div onclick="changeImg('/assets/img/panel3.png', 'Imagen que muestra el panel de gestión del mods.')" class="p-6 rounded-5xl border border-branding mb-2 lg:mb-0 hover:bg-branding/20 trnasition-all duration-300 cursor-pointer">
+                <div onclick="changeImg('./assets/img/panel3.png', 'Imagen que muestra el panel de gestión del mods.')" class="p-6 rounded-5xl border border-branding mb-2 lg:mb-0 hover:bg-branding/20 trnasition-all duration-300 cursor-pointer">
                     <h3 class="text-[22px] font-semibold"><i class="fa-regular fa-wrench"></i> Gestor de mods</h3>
                 </div>
-                <div onclick="changeImg('/assets/img/panel4.png', 'Imagen que muestra el panel de gestión del plugins.')" class="p-6 rounded-5xl border border-branding mb-2 lg:mb-0 hover:bg-branding/20 trnasition-all duration-300 cursor-pointer">
+                <div onclick="changeImg('./assets/img/panel4.png', 'Imagen que muestra el panel de gestión del plugins.')" class="p-6 rounded-5xl border border-branding mb-2 lg:mb-0 hover:bg-branding/20 trnasition-all duration-300 cursor-pointer">
                     <h3 class="text-[22px] font-semibold"><i class="fa-solid fa-plug"></i> Gestor de Plugins</h3>
                 </div>
             </div>
-            <img src="/assets/img/panel1.png" id="panelDisplayImg" alt="Imagen que muestra el panel de gestión del servidor."class="mt-5 lg:mx-[24%] mx-0 w-full lg:w-[48%] rounded-5xl border-1 border-branding" loading="lazy" decoding="async">
+            <img src="./assets/img/panel1.png" id="panelDisplayImg" alt="Imagen que muestra el panel de gestión del servidor."class="mt-5 lg:mx-[24%] mx-0 w-full lg:w-[48%] rounded-5xl border-1 border-branding" loading="lazy">
         </div>
     </div>
     <div class="max-w-4xl mx-auto px-4 py-12">
@@ -253,7 +261,7 @@
                     <i class="fa-solid fa-play transform transition-transform duration-200 text-sm text-blue-400"></i>
                 </button>
                 <div class="faq-content px-6 pb-4 hidden bg-gray-800/50">
-                    <p class="text-gray-300 pt-4">Los pedidos se procesan al instante una vez recibido el pago. Normalmente, el proceso demora entre 5-10 minutos. Si tarda más, te sugerimos que abras un chat en vivo o ticket en nuestro <a class="text-blue-400 font-bold hover:underline" href="https://discord.gg/Nq3XNkbKGJ" target="_blank" rel="noopener noreferrer">Discord</a>.</p>
+                    <p class="text-gray-300 pt-4">Los pedidos se procesan al instante una vez recibido el pago. Normalmente, el proceso demora entre 5-10 minutos. Si tarda más, te sugerimos que abras un chat en vivo o ticket en nuestro <a class="text-blue-400 font-bold hover:underline" href="https://discord.com/invite/QKVE898psb" target="_blank" rel="noopener noreferrer">Discord</a>.</p>
                 </div>
             </div>
             <div class="border border-branding rounded-5xl overflow-hidden transition-all duration-300">
@@ -274,7 +282,7 @@
                 <h3 class="text-[19px] text-gray-300">Tu servidor, nuestro compromiso</h3>
                 <p class="text-gray-300">Tu solución profesional para hosting de juegos</p>
                 <div class="mt-5">
-                    <a href="https://discord.gg/Nq3XNkbKGJ" class="p-2 rounded-full border text-white hover:bg-white hover:text-black duration-300"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://discord.com/invite/QKVE898psb" class="p-2 rounded-full border text-white hover:bg-white hover:text-black duration-300"><i class="fa-brands fa-discord"></i></a>
                     <a href="https://x.com/RenderCores" class="p-2 rounded-full border text-white hover:bg-white hover:text-black duration-300"><i class="fa-brands fa-twitter"></i></a>
                     <a href="https://facebook.com/profile.php?id=61559791887146" class="p-2 rounded-full border text-white hover:bg-white hover:text-black duration-300"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://instagram.com/enderhostingmx" class="p-2 rounded-full border text-white hover:bg-white hover:text-black duration-300"><i class="fa-brands fa-instagram"></i></a>
@@ -283,10 +291,12 @@
             </div>
             <div class="flex flex-col text-center mt-10 lg:mt-0 lg:text-left ml-0 lg:ml-[60px]">
                 <h3 class="font-bold text-xl">Enlaces</h3>
+                <a href="/partnership" class="text-gray-300 hover:underline">Programa <span class="bg-branding px-2">ParnerShip</span></a>
+                <a href="/affiliate" class="text-gray-300 hover:underline">Programa <span class="bg-branding px-2">Afiliado</span></a>
                 <a href="https://rendercores.online/" class="text-gray-300 hover:underline">Documentación</a>
                 <a href="https://rendercores.online#locations" class="text-gray-300 hover:underline">Ubicaciones</a>
                 <a href="https://rendercores.online#plans" class="text-gray-300 hover:underline">Planes</a>
-                <a href="https://discord.gg/Nq3XNkbKGJ" class="text-gray-300 hover:underline">Discord</a>
+                <a href="https://discord.com/invite/QKVE898psb" class="text-gray-300 hover:underline">Discord</a>
             </div>
             <div class="flex flex-col text-center mt-10 lg:mt-0 lg:text-left ml-0 lg:ml-[60px]">
                 <h3 class="font-bold text-xl">Contacto</h3>
@@ -297,39 +307,10 @@
         <hr class="lg:block border-gray-300 w-full my-5 ">
         <p>© 2025 RenderCores. Todos los derechos reservados. <a href="https://rendercores.online/terms.html" class="text-blue-300 hover:underline">Términos de servicio</a> <a href="https://rendercores.online/privacy.html" class="text-blue-300 hover:underline">Política de privacidad</a></p>
     </div>
-<script>
-    const menuBtn = document.getElementById('menuBtn');
-        const menuBtnIcon = document.getElementById('menuBtnIcon');
-    const mobileMenu = document.getElementById('mobileMenu');
-    
-    menuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-        menuBtnIcon.classList.toggle('fa-xmark');
-        menuBtnIcon.classList.toggle('fa-bars');
-    });
-</script>
-<script>
-document.querySelectorAll('.faq-btn').forEach(button => {
-    button.addEventListener('click', () => {
-        const content = button.nextElementSibling;
-        const icon = button.querySelector('i');
-        content.classList.toggle('hidden');
-        icon.classList.toggle('rotate-90');
-        document.querySelectorAll('.faq-content').forEach(item => {
-            if (item !== content && !item.classList.contains('hidden')) {
-                item.classList.add('hidden');
-                item.previousElementSibling.querySelector('i').classList.remove('rotate-90');
-            }
-        });
-    });
-});
-</script>
-    <script>
-        function changeImg(imgNewSrc, imgNewAlt) {
-            let panelDisplayImg = document.getElementById('panelDisplayImg');
-            panelDisplayImg.src = imgNewSrc;
-            panelDisplayImg.alt = imgNewAlt;
-        }
-    </script>
+    <script src="./assets/js/mobileMenu.js"></script>
+    <script src="./assets/js/imgDisplayer.js"></script>
+    <script src="./assets/js/sectionDisplayer.js"></script>
+    <script src="./assets/js/indexScrollMenu.js"></script>
+    <script src="./assets/js/priceChanger.js"></script>
 </body>
 </html>
