@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RenderCores</title>
+    <meta name="description" content="Ofrecemos un servicio de hosting de alto rendimiento para tus juegos favoritos, con servidores ubicados en todo el mundo y una garantía de 99.9% de tiempo de actividad.">
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css" rel="stylesheet">
+    <link rel="preload" href="./assets/img/logo.webp" as="image">
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo.ico">
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://rendercores.online">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RenderCores">
+    <meta property="og:description" content="Ofrecemos un servicio de hosting de alto rendimiento para tus juegos favoritos, con servidores ubicados en todo el mundo y una garantía de 99.9% de tiempo de actividad.">
+    <meta property="og:image" content="https://rendercores.online/assets/media/logo.webp">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="rendercores.online">
+    <meta property="twitter:url" content="https://rendercores.online">
+    <meta name="twitter:title" content="RenderCores">
+    <meta name="twitter:description" content="Ofrecemos un servicio de hosting de alto rendimiento para tus juegos favoritos, con servidores ubicados en todo el mundo y una garantía de 99.9% de tiempo de actividad.">
+    <meta property="twitter:image" content="https://rendercores.online/assets/media/logo.webp">
+</head>
+<body class="font-poppins bg-standard text-txt overflow-x-hidden">
+    <nav class="pt-5 px-5 lg:p-5 flex flex-row left-0 right-0 justify-between z-20">
+        <div class="flex items-center mb-4 lg:mb-0 z-10">
+            <img src="./assets/img/logo.webp" alt="Logo azul y blanco de RenderCores" class="w-12 h-12" loading="lazy" decoding="async">
+            <h1 class="ml-3 text-xl lg:text-2xl font-bold">RenderCores</h1>
+        </div>
+        <div class="hidden lg:flex items-center">
+            <ul class="flex space-x-6">
+                <li class="hover:underline decoration-branding decoration-2 underline-offset-4"><a href="https://rendercores.online/">Inicio</a></li>
+                <li class="hover:underline decoration-branding decoration-2 underline-offset-4"><a href="./affiliate">Afiliado & Partner</a></li>
+                <!-- <li class="hover:underline decoration-branding decoration-2 underline-offset-4"><a href="./about.html">Sobre Nosotros</a></li> -->
+                <li class="hover:underline decoration-branding decoration-2 underline-offset-4"><a href="#plans">Planes</a></li>
+                <li class="hover:underline decoration-branding decoration-2 underline-offset-4"><a href="https://discord.com/invite/QKVE898psb">Contacto</a></li>
+            </ul>
+            <button onclick="window.location.href='https://clientes.rendercores.online/auth/register'" class="ml-6 border-2 border-branding py-2 px-6 bg-transparent hover:bg-branding hover:text-white transition-colors">Empezar</button>
+        </div>
+        <button class="lg:hidden text-2xl z-10 -mt-3" id="menuBtn"><i class="fa-solid fa-bars" id="menuBtnIcon"></i></button>
+    </nav>
+    <div id="mobileMenu" class="hidden fixed lg:hidden bg-standard w-full py-4 px-5 top-0 z-5">
+        <ul class="space-y-4 text-center pt-15">
+            <li><a href="/" class="block py-2">Inicio</a></li>
+            <li><a href="./affiliate" class="block py-2">Afiliado & Partner</a></li>
+            <!-- <li><a href="./about.html" class="block py-2">Planes</a></li> -->
+            <li><a href="#plans" class="block py-2">Planes</a></li>
+            <li><a href="https://discord.com/invite/QKVE898psb" class="block py-2">Contacto</a></li>
+            <li>
+                <a href="https://clientes.rendercores.online/auth/register" class="block mt-4 py-2 border-2 border-branding hover:bg-branding hover:text-white transition-colors">Empezar</a>
+            </li>
+        </ul>
+    </div>
+    <style>
+        .affiliateBanner {
+            background-image: url('./assets/img/bannerAffiliate.webp');
+            filter: brightness(0.7);
+            transition: filter 0.3s ease;
+        }
+        .affiliateBanner:hover {
+            filter: brightness(1);
+        }
+        .partnerBanner {
+            background-image: url('./assets/img/bannerPartner.webp');
+            filter: brightness(0.7);
+            transition: filter 0.3s ease;
+        }
+        .partnerBanner:hover {
+            filter: brightness(1);
+        }
+    </style>
+    <div class="h-[45vh] mx-5 bg-cover rounded-6xl text-center flex flex-col justify-center items-center bg-no-repeat" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('./assets/img/affiliateBg.webp');">
+        <h1 class="text-white mx-2 text-4xl lg:text-7xl font-bold mb-4" style="line-height: 1.5;">Programa de <span class="bg-branding px-3">Afiliado & Partner</span></h1>
+        <p class="text-gray-300 mx-2 text-xl lg:text-3xl mb-8">Conviértete en un aliado y gana con nosotros.</p>
+        <div class="flex flex-col md:flex-row justify-center items-center">
+            <a href="#" class="mt-4 border-2 border-branding hover:bg-branding text-white py-3 transition lg:px-30 px-15">Hazte Afiliado ahora</a>
+        <a href="#" class="mt-2 md:mt-4 md:ml-2 border-2 border-branding hover:bg-branding text-white py-3 transition lg:px-30 px-15">Hazte Partner</a>
+        </div>
+    </div>
+    <div class="h-[45vh] flex mx-4 md:flex-row flex-col">
+        <a href="#affiliate" class="flex-1 text-center rounded-6xl m-2 p-6 flex flex-col justify-between bg-cover transition-all duration-300 filter brightness-75 hover:brightness-100" style="background-image: url('./assets/img/bannerAffiliate.webp');">
+            <h2 class="text-2xl md:text-5xl font-bold">Programa de afiliados</h2>
+            <p class="text-base md:text-xl">El programa está abierto     a todo el mundo. ¡A que esperas! Comparte el link y empieza a ganar dinero.</p>
+        </a>
+        <a href="#partner" class="flex-1 text-center rounded-6xl m-2 p-6 flex flex-col justify-between bg-cover transition-all duration-300 filter brightness-75 hover:brightness-100" style="background-image: url('./assets/img/bannerPartner.webp');">
+            <h2 class="text-2xl md:text-5xl font-bold">Programa de Partner</h2>
+            <p class="text-base md:text-xl">Monetiza tu comunidad de una forma más efectiva y veneficiosa.</p>
+        </a>
+    </div>
+    <h2 class="mt-6 text-3xl md:text-5xl font-bold text-center mx-7" id="affiliate">Afiliados</h2>
+    <h3 class="text-2xl md:text-3xl text-center mx-7 mb-10">Cómo unirse al programa de afiliados?</h3>
+    <div class="flex flex-col lg:flex-row gap-4 mx-7">
+        <div class="flex w-full p-5 rounded-6xl text-black" style="background: linear-gradient(180deg,#ebebeb 50%, #eff294 100%);">
+            <span class="text-4xl text-[#574d33] mr-4 font-bold">1</span>
+            <div>
+                <h1 class="font-bold text-3xl text-[#574d33]">Registrate en el Billing</h1>
+                <p class="text-[#4f462f]">Registrate en el <a class="underline" href="">billing</a>, se te enviará un código para verificar que usas un email propio. Cuando ya estés dentro te saldrá una nueva interfaz, si esa nueva interfaz, es decir el dashboard no aparece tendrás que iniciar sesión.</p>
+            </div>
+        </div>
+        <div class="flex w-full p-5 rounded-6xl text-black" style="background: linear-gradient(180deg,#ebebeb 50%, #94f2aa 100%);">
+            <span class="text-4xl text-[#355733] mr-4 font-bold">2</span>
+            <div>
+                <h1 class="font-bold text-3xl text-[#355733]">Obtener enlace de referidos</h1>
+                <p class="text-[#2f4f33]">Una vez registrado y con la sesión iniciada, para obtener un enlace de afiliados debe de hacer clic en la imagen de perfil situada arriba a la derecha. Ahí le saldrá la opción de "Affiliates". En el apartado podrás copiar el enlace.</p>
+            </div>
+        </div>
+        <div class="flex w-full p-5 rounded-6xl text-black" style="background: linear-gradient(180deg,#ebebeb 50%, #96ccff 100%);">
+            <span class="text-4xl text-[#334757] mr-4 font-bold">3</span>
+            <div>
+                <h1 class="font-bold text-3xl text-[#334757]">Envia el enlace y gana</h1>
+                <p class="text-[#3f596f]">Ahora tienes el enlace copiado, ese enlace tiene un código que te identifica a tí como usuario ue mando el enlace. Gracias al código podrás ver los beneficios, podrá ver la gente que ha hecho clic y los que se han registrado.</p>
+            </div>
+        </div>
+    </div>
+    <h3 class="text-2xl md:text-3xl text-center mx-7 mt-10 mb-5">Información adicional</h3>
+    <div class="flex flex-col lg:flex-row gap-4 mx-7">
+        <div class="bg-primary p-10 rounded-6xl w-full">
+            <h3 class="text-2xl font-bold mb-3">Comisión del 10%</h3>
+            <p>Recibirás un 10% de comisión por cada compra que realice un usuario que se haya registrado a través de tu enlace de afiliado. El enlace consta de tu código aleatorio de afiliados que registra Información que hace funcionar el código en toda la página a pesar de cambiar el enlace.</p>
+        </div>
+        <div class="bg-primary p-10 rounded-6xl w-full">
+            <h3 class="text-2xl font-bold mb-3">Retiro de dinero</h3>
+            <p>Tenemos tres métodos de retirada: Balance, Paypal y Bitcoin. La opción <i>Balance</i> es cuando el dinero se paga en formato de saldo a la cuenta. Para la opción <i>PayPal</i> solo tendrás que poner el email de Paypal. Para <i>Bitcoin</i> solo será necesario una dirección Wallet. El mínimo es de 10 USD.</p>
+        </div>
+        <div class="bg-primary p-10 rounded-6xl w-full">
+            <h3 class="text-2xl font-bold mb-3">Crece con nosotros</h3>
+            <p>Si tienes una comunidad grande y quieres monetizarla, puedes unirte al programa de Partner. Con este programa podrás obtener beneficios adicionales y una comisión mayor que varia dependiendo del trato por cada compra que realice un usuario que se haya registrado a través de tu enlace.</p>
+        </div>
+    </div>
+    <div class="border-2 border-branding my-10 mx-7 p-10 rounded-6xl ">
+        <h3 class="text-2xl md:text-3xl"><i class="fa-solid fa-star text-branding"></i> Los usuarios registrados con tu enlace reciben un <b>5%</b> de descuento</h3>
+    </div>
+    <a href="https://clientes.rendercores.online/affiliates" class="block text-center bg-branding p-5 mx-7 rounded-3xl hover:bg-branding-hover transition-all duration-300 text-lg">Hazte afiliado</a>
+    <h2 class="mt-20 text-3xl md:text-5xl font-bold text-center mx-7" id="partner">Partner</h2>
+    <h3 class="text-2xl md:text-3xl text-center mx-7 mb-10">Programa de referidos para audiencias grandes</h3>
+    <p></p>
+    <form action="https://formspree.io/f/xjkrolyr" method="POST" class="lg:w-1/2 flex flex-col mx-5 lg:mx-auto rounded-6xl bg-primary p-10 md:p-20">
+        <h3 class="text-2xl md:text-3xl font-bold mb-1">Contáctanos</h3>
+        <p class="mb-5 text-gray-200">A través de este formulario podrás postularte al programa partner.</p>
+        <div class="flex flex-col lg:flex-row gap-4">
+            <label class="w-full">Nombre:<input type="text" name="Nombre" class="mt-2 border-2 border-branding outline-2 w-full outline-primary focus:outline-branding-hover outline-offset-2 p-2 rounded-2xl" required placeholder="Nombre"></label>
+            <label class="mb-10 w-full">Email:<input type="email" name="Email" class="mt-2 border-2 border-branding outline-2 w-full outline-primary focus:outline-branding-hover outline-offset-2 p-2 rounded-2xl" required placeholder="Email de contacto"> </label>
+        </div>
+        <label>Mensaje:<textarea name="Mensaje" class="h-30 w-full mt-2 border-2 border-branding outline-2 outline-primary focus:outline-branding-hover outline-offset-2 p-2 rounded-3xl" required placeholder="Cuentanos sobre tí, como promocionarias el hosting y que nos podriás aportar."></textarea></label>
+        <input type="hidden" name="Tags" value="<@1101988438632300545> <@1014931210981613568> <@1109254058998497331>">
+        <button type="submit" class="mt-5 cursor-pointer p-3 bg-branding rounded-2xl hover:bg-branding-hover duration-300 transition-all">Enviar</button>
+    </form>
+    <div class="flex flex-col my-10 mx-5 bg-primary rounded-5xl p-10">
+        <div class="flex flex-col lg:flex-row justify-between items-center">
+            <div>
+                <h2 class="text-4xl">RenderCores</h2>
+                <h3 class="text-[19px] text-gray-300">Tu servidor, nuestro compromiso</h3>
+                <p class="text-gray-300">Tu solución profesional para hosting de juegos</p>
+                <div class="mt-5">
+                    <a href="https://discord.com/invite/QKVE898psb" class="rounded-full border border-white text-white hover:bg-white hover:text-primary duration-300" style="padding: 5px 6px;"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://x.com/RenderCores" class="rounded-full border border-white text-white hover:bg-white hover:text-primary duration-300" style="padding: 5px 8px;"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://facebook.com/profile.php?id=61559791887146" class="rounded-full border border-white text-white hover:bg-white hover:text-primary duration-300 outline-0" style="padding: 5px 8px;"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/enderhostingmx" class="rounded-full border border-white text-white hover:bg-white hover:text-primary duration-300" style="padding: 5px 9px;"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@rendercores" class="rounded-full border border-white text-white hover:bg-white hover:text-primary duration-300" style="padding: 5px 8px;"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="flex flex-col text-center mt-10 lg:mt-0 lg:text-left ml-0 lg:ml-[60px]">
+                <h3 class="font-bold text-xl">Enlaces</h3>
+                <a href="/partnership" class="text-gray-300 hover:underline">Programa <span class="bg-branding px-2">ParnerShip</span></a>
+                <a href="/affiliate" class="text-gray-300 hover:underline">Programa <span class="bg-branding px-2">Afiliado</span></a>
+                <a href="https://rendercores.online/" class="text-gray-300 hover:underline">Documentación</a>
+                <a href="https://rendercores.online#locations" class="text-gray-300 hover:underline">Ubicaciones</a>
+                <a href="https://rendercores.online#plans" class="text-gray-300 hover:underline">Planes</a>
+                <a href="https://discord.com/invite/QKVE898psb" class="text-gray-300 hover:underline">Discord</a>
+            </div>
+            <div class="flex flex-col text-center mt-10 lg:mt-0 lg:text-left ml-0 lg:ml-[60px]">
+                <h3 class="font-bold text-xl">Contacto</h3>
+                <a href="mailto:hola@rendercores.online" class="text-gray-300 hover:underline">hola@rendercores.online</a>
+                <a href="tel:+523113935413" class="text-gray-300 hover:underline">+52 311-393-5413</a>
+            </div>
+        </div>
+        <hr class="lg:block border-gray-300 w-full my-5 ">
+        <p>© 2025 RenderCores. Todos los derechos reservados. <a href="https://rendercores.online/terms.html" class="text-blue-300 hover:underline">Términos de servicio</a> <a href="https://rendercores.online/privacy.html" class="text-blue-300 hover:underline">Política de privacidad</a></p>
+    </div>
+    <script src="./assets/js/mobileMenu.js"></script>
+</html>
